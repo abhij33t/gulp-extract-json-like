@@ -1,6 +1,6 @@
 {
   "name": "gulp-extract-json-like",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gulp plugin for extracting JSON like strings from text.",
   "license": "MIT",
   "repository": "saamo/gulp-extract-json-like",
@@ -19,11 +19,15 @@
     "index.js"
   ],
   "keywords": [
-    "gulpplugin"
+    "gulpplugin",
+    "extract",
+    "parse",
+    "json"
   ],
   "dependencies": {
     "gulp-util": "^3.0.4",
-    "through2": "^0.6.5"
+    "through2": "^0.6.5",
+    "xregexp": "^2.0.0"
   },
   "devDependencies": {
     "mocha": "*"
