@@ -22,7 +22,7 @@ module.exports = function () {
 			result = result.join("}, {");
 			result = "[{" + result + "}]";
 
-      file.contents = new Buffer(result);
+			file.contents = new Buffer(result);
 			this.push(file);
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-extract-json-like', err));
