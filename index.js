@@ -17,10 +17,21 @@ module.exports = function () {
 
 		try {
 			var contents = file.contents.toString();
-			var result = XRegExp.matchRecursive(contents, '{', '}', 'gm');
 
-			result = result.join("}, {");
-			result = "[{" + result + "}]";
+			// find JSON like objects {} and arrays []
+			var objects = XRegExp.matchRecursive(contents, '(\\[|\\{)', '(\\}|\\])', 'g', {
+				valueNames: [null, 'left', 'match', 'right']
+			});
+
+			// wrap them in {}, or in [] respectively
+			var result = [];
+			for (var i = 1; i < objects.length; i++) {
+				if (objects[i].value == 'match') {
+					result.push(objects[i-1].name + objects[i].name + objects[i+1].name);
+				}
+			}
+
+			result = '[' + result.join(', ') + ']';
 
 			file.contents = new Buffer(result);
 			this.push(file);

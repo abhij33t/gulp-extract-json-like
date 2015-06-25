@@ -1,6 +1,6 @@
 # Gulp Extract JSON (like)
 
-[Gulp](http://gulpjs.com) plugin for extracting JSON like strings from text. The result is an array of strings.
+[Gulp](http://gulpjs.com) plugin for extracting JSON like strings from text.
 
 ## Install
 
