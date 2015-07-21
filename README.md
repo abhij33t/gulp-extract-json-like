@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install --save-dev gulp-extract-json-like
+$ npm install --save gulp-extract-json-like
 ```
 
 ## Usage
