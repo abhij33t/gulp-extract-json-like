@@ -1,5 +1,8 @@
 # Gulp Extract JSON (like)
 
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+
 [Gulp](http://gulpjs.com) plugin for extracting JSON like strings from text.
 
 ## Install
@@ -32,3 +35,8 @@ And that's the exact moment when this plugin comes handy. It finds all JSON like
 ## License
 
 MIT © [Samir Djellil](http://samirdjellil.com)
+
+[npm-image]: https://img.shields.io/npm/v/gulp-extract-json-like.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/gulp-extract-json-like
+[travis-image]: https://img.shields.io/travis/saamo/gulp-extract-json-like/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/saamo/gulp-extract-json-like
